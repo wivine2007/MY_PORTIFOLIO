@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wivine's Portfolio</title>
+  <style>
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: blue;
+      color: #fff;
+      padding: 1em 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: skyblue;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: white;
+    }
+
+    #hero {
+      position: relative;
+      background: linear-gradient(to bottom, rgba(0, 0, 128, 0.7), rgba(0, 191, 255, 0.7));  
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero .hero-content {
+      z-index: 1;
+    }
+
+    #hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    #hero button {
+      background-color: skyblue;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #hero button:hover {
+      background-color: deepskyblue;
+    }
+
+   
+    .section {
+      padding: 50px 0;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .about-container p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+
+    .project-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px skyblue;
+      flex-basis: 30%;
+    }
+
+    .card h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .testimonial img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-block {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px skyblue;
+      max-width: 600px;
+      margin-left: 30px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      margin-top: 20px;
+      background-color: skyblue;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: deepskyblue;
+    }
+
+    footer {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Wivine's Portfolio</h1> 
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I am a passionate web developer.</p>
+      <a href="#about"><button>Learn More About Me</button></a> 
+    </div>
+  </section>
+
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="./me4.jpg" alt="Wivine's Photo" class="about-image">
+        <p>Hello! I'm Wivine, a passionate web developer with a strong foundation in front-end technologies. I specialize in creating visually engaging and user-friendly websites using HTML, CSS, and JavaScript. My goal is to transform ideas into interactive digital experiences that are both functional and beautiful. With an eye for detail and a love for clean design, I strive to make every project reflect my commitment to quality and innovation.</p>
+        <p>Having worked on various projects ranging from personal portfolios to full-scale web applications, I am constantly learning and adapting to new technologies. My focus is on delivering solutions that are responsive, accessible, and scalable. As I grow as a developer, I aim to continue mastering backend technologies and integrate them seamlessly into my projects, creating full-stack solutions that meet modern web standards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>Project 1: Task Tracker</h3>
+          <p>A web application that helps users manage their daily tasks. Built with HTML, CSS, and JavaScript, it features a simple, intuitive interface and allows users to add, edit, and remove tasks.</p>
+        </div>
+        <div class="card">
+          <h3>Project 2: Portfolio Website</h3>
+          <p>This portfolio website showcases my web development skills. It includes sections on my experience, skills, and projects, with a clean, professional design aimed at providing a seamless user experience.</p>
+        </div>
+        <div class="card">
+          <h3>Project 3: Blog Platform</h3>
+          <p>A responsive blog platform built with HTML and CSS. It features a dynamic layout that adjusts to any screen size, and the articles are displayed in a grid format for easy reading and navigation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>What Others Say</h2>
+      <div class="testimonial">
+        <img src="./doe.jpg" alt="Testimonial Person">
+        <div class="testimonial-block">
+          <p>"Wivine's work is exceptional! She turned my vague ideas into a fully functional and beautiful website. She’s not only skilled in web development, but also an excellent communicator who made the whole process smooth and enjoyable."</p>
+          </div>
+          </div>
+         
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
